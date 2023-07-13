@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Web Page</title>
+
+</head>
+
+<body>
+    <p class="p1"> this is my page1</p>
+    <p id="p2"> this is my page2</p>
+    <p class="p1"> this is my page3</p>
+    <p> this is my page4</p>
+</body>
+<script src="js\jquery-3.7.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log('using jquery');
+        // $ means jquery
+        // $('selector').action(); when u click on selector action is going to perform
+        //$('p').click();
+        // $(this).hide();
+        $('p').click(function () {
+            console.log('you clicked paragraph',this)
+        //$('#p1').hide();
+          
+        });
+        //$('#p2').click();
+        // $('p').dblclick(function () {
+        //     console.log('you doubleclicked paragraph',this)
+        // //$('#p1').hide();
+          
+        // });
+        $('p').on(
+            {
+             click:function(){
+                console.log('you clicked ',this);
+             },
+             mouseleave:function(){
+                console.log('mouse has been left');
+             }
+             
+        })
+
+       
+
+    });
+</script>
+
+</html>
