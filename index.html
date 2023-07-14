@@ -12,7 +12,19 @@
     <p id="p2"> this is my page2</p>
     <p class="p1"> this is my page3</p>
     <p> this is my page4</p>
-</body>
+
+    <div id="para">
+        The Wikimedia Foundation, Inc. (WMF) is an American 501(c)(3) nonprofit organization headquartered in San
+        Francisco, California, and registered as a charitable foundation under local laws.[5] Best known as the hosting
+        platform for Wikipedia, a crowdsourced online encyclopedia, it also hosts other related projects and MediaWiki,
+        a wiki software.[6][7][8]
+    </div>
+
+    <button id="b">Toggle now</button>
+
+    <input type="text" >
+    <textarea id="ta">please fill this</textarea>
+
 <script src="js\jquery-3.7.0.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -22,30 +34,57 @@
         //$('p').click();
         // $(this).hide();
         $('p').click(function () {
-            console.log('you clicked paragraph',this)
-        //$('#p1').hide();
-          
+            console.log('you clicked paragraph', this)
+            //$('#p1').hide();
+
         });
         //$('#p2').click();
         // $('p').dblclick(function () {
         //     console.log('you doubleclicked paragraph',this)
         // //$('#p1').hide();
-          
+
         // });
         $('p').on(
             {
-             click:function(){
-                console.log('you clicked ',this);
-             },
-             mouseleave:function(){
-                console.log('mouse has been left');
-             }
-             
+                click: function () {
+                    console.log('you clicked ', this);
+                },
+                mouseleave: function () {
+                    console.log('mouse has been left');
+                }
+
+            })
+        $('#para').show(2000, function () {
+            console.log('show');
+        })
+        $('#para').hide(2000, function () {
+            console.log('hide');
         })
 
-       
+        $('#b').click(function () {
+            $('#para').toggle(2000);
+        })
 
-    });
+          $('#para').animate(
+            {
+                opacity: 0.3,
+                height: '150px',
+                width: '350px'
+
+
+            }, 2000)
+
+    
+
+            //  $('#para').text('hi'); 
+            //  $('#ta').val();     
+            //  $('#para').css('background-color','red')
+            //  $.get('https://code.jquery.com/jquery-3.7.0.js',function(data,status){
+            //     alert(data);
+            //  })
+             var len=$('#para').length;
+             console.log(len);
+            });
 </script>
-
+</body>
 </html>
