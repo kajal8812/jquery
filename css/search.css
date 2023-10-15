@@ -1,0 +1,160 @@
+.p2r1{
+    display:flex;
+    flex-direction: row;
+   
+    
+    
+    
+}
+.p2r2{
+    display:flex;
+    flex-direction:row;
+    margin-top:0px;
+    padding-left:5px;
+    
+   
+}
+.p2r3{
+    display:flex;
+    flex-direction:row;
+    
+   
+    
+    margin-top:2px;
+    padding-left:5px;
+    
+}
+.p2r4{
+    display:flex;
+    flex-direction:row;
+    
+    margin-top:-25px;
+    padding:1px 1px;
+}
+.p2r4c1{
+    display:flex;
+    flex-direction:column;
+    width:48%;
+    padding-right: 20px;
+    padding-left:5px;
+}
+.p2r4c2{
+    display:flex;
+    flex-direction:column;
+    width:48%;
+    padding-left:5px; ;
+}
+.p2r4c2f1{
+    background-color:lightslategrey;
+    padding:4px;
+    display:flex;
+    flex-direction: row;
+}
+.p2r4c2f2{
+    background-color:whitesmoke;
+    padding:4px;
+    display:flex;
+    flex-direction: row;
+}
+.p2r4c2f3{
+    background-color:lightslategrey;
+    padding:4px;
+    display:flex;
+    flex-direction: row;
+}
+.p2r5{
+    display:flex;
+    flex-direction: row;
+    
+    margin-top:-15px;
+}
+.p2r5c1{
+  
+   padding-left:355px;
+}
+
+.p2r5c2{
+  
+    padding-left:100px;
+ }
+ .p2r6{
+    display:flex;
+    flex-direction: row;
+    
+    margin-top:-45px;
+    padding-left:5px;
+ }
+ .p2r6c1{
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    padding-right:40px;
+   
+}
+ .p2r6c2{
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    padding-right:40px;
+ }
+ .p2r6c3{
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    padding-right:40px;
+ }
+ .p2r6c4{
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    padding-right:40px;
+ }
+ .p2r7{
+    display:flex;
+    flex-direction: row;
+    
+    padding-left:5px;
+    margin:-3px;
+
+ }
+ .r71{
+   border:1px solid red;
+   padding:5px 5px;
+   margin-right: 100px;
+   background-color: skyblue;
+   cursor:pointer;
+ }
+ .r72{
+    border:1px solid red;
+    padding:5px 5px;
+    background-color: skyblue;
+    cursor:pointer;
+ }
+
+
+
+/* 
+input[type=button]{
+    margin-left:589px;
+    width:30%;
+    background-color: skyblue;
+    color:white;
+    cursor:pointer;
+} */
+
+span{
+    color:red;
+}
+input[type=submit]{
+    float:right;
+    cursor:pointer;
+    padding: 16px 32px;
+    margin: 10px 10px;
+    background-color: aliceblue;
+}
+.r{
+    
+    float:center;
+    margin-left:900px;
+
+}

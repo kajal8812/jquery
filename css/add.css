@@ -1,0 +1,60 @@
+h2{
+    color:mediumspringgreen;
+}
+span{
+    color:red;
+}
+.selectcategory{
+    padding:10px 10px;
+    margin-right:30px;
+    
+}
+.selectsub{
+    padding:10px 10px;
+    margin-right:30px;
+}
+.selectl3{
+    padding:10px 10px;
+    margin-right:30px;
+}
+.name{
+    padding:10px 10px;
+    margin-right:30px;
+}
+.code{
+    padding:10px 10px;
+    margin-right:30px;
+}
+.search{
+    padding:10px 10px;
+    margin-right:30px;
+    
+}
+
+
+.add{
+    display:flex;
+    flex-direction: row;
+    
+   
+}
+
+
+input[type=submit]{
+    float:right;
+    cursor:pointer;
+    padding: 16px 32px;
+    margin: 10px 10px;
+   
+    background-color: aliceblue;
+}
+input[type=button]{
+    
+    cursor:pointer;
+   padding:5px 5px;
+   
+    background-color: aliceblue;
+}
+.main{
+    border:1px solid aliceblue;
+}          

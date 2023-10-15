@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Effigo</title>
+    <link href="css/task.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h2 class="nr">New Requisition</h2>
+    <h2>Basic Information</h2>
+    <div class="row1">
+      <div class="r1c1">
+        <label>Requestor</label>
+        <input type="text" id="name" maxlength="10" />
+      </div>
+      <div class="r1c2">
+        <label>Business Unit</label>
+        <select>
+          <option>NCC Ltd-Mines</option>
+        </select>
+      </div>
+
+      <div class="r1c3">
+        <label>Requisition Date</label>
+
+        <input type="text" id="date" size="15" />
+      </div>
+
+      <div class="r1c4">
+        <label>PO Type<span>*</span></label>
+
+        <select>
+          <option>Work Order</option>
+        </select>
+      </div>
+    </div>
+    <br />
+    <div class="row2">
+      <div class="r2c1">
+        <label>Requisition Title<span>*</span></label>
+        <input type="text" placeholder="title" size="40" />
+      </div>
+
+      <div class="r2c2">
+        <label>Requisition Type<span>*</span></label>
+        <select>
+          <option>Select</option>
+        </select>
+      </div>
+
+      <div class="r2c3"><input type="checkbox" />Urgent</div>
+    </div>
+    <br/>
+
+    <div class="row3">
+      <div class="r3c1">
+        <label>Select On Behalf Of User<span>*</span></label>
+        <select>
+          <option>Select</option>
+        </select>
+      </div>
+
+      <div class="r3c2">
+        <label>Currency<span>*</span></label>
+        <select>
+          <option>INR</option>
+        </select>
+      </div>
+    </div>
+    <br>
+     
+    <div class="row4">
+    <div class="r4c1">
+      <label>Project</label>
+      <select>
+        <option>MKD OCM WCL</option>
+      </select>
+    </div>
+
+    <div class="r4c2">
+      <label>Cost Center Per<span>*</span></label>
+      <div class="r4c2f">
+      <input type="radio" checked="checked"  name="ccp"/>Requisition
+      <input type="radio" name="ccp"/>Item
+    </div>
+    </div>
+
+    <div class="r4c3">
+      <label>Cost Center<span>*</span></label>
+      <input type="text" />
+    </div>
+    </div>
+    <br />
+     
+<div class="row5">
+     <div class="r5c1">
+      <label>Warehouse Address<span>*</span></label>
+      <textarea maxlength="550" rows="9" cols="30"></textarea>
+    </div>
+
+    <div class="r5c2">
+      <label>Building Address<span>*</span></label>
+      <input type="text" size="40" />
+    </div>
+</div>
+    <br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="od">
+      <h2>Other Details</h2>
+      <div class="rc">
+    <div class="col1">
+    <div class="col1r1">
+    <label>Requisition Purpose</label>
+    <textarea cols="20" rows="5" maxlength="500"></textarea>
+    <br>
+    </div>
+
+    <div class="col1r2">
+        <label>Notes to Approver</label>
+        <textarea cols="20" rows="5" maxlength="500"></textarea>
+        <br>
+    </div>
+      <div class="col1r3">
+        <label>Notes to Buyer</label>
+        <textarea cols="20" rows="5" maxlength="500"></textarea>
+        <br>
+    </div>
+
+
+
+
+
+
+    <div class="col1r4">
+<label>BOQ Upload</label>
+<div class="col1r4up">
+<div class="col1r4-1" >
+<label for="imageUpload" >Upload</label>
+<input type="file" id="imageUpload" style="display: none">
+</div>
+<div class="col1r4-2">
+<label for="imageUpload" >Start Upload</label>
+<input type="file" id="imageUpload" style="display: none">
+</div>
+</div>
+</div>
+
+<br>
+
+<span>Note:Please upload .xls|.xslx|.doc|.pdf|.jpeg file only!</span>
+</div>
+
+
+
+   
+
+<div class="col2">
+      <div class="col2r1">
+        <label>Notes to Supplier</label>
+        <textarea cols="20" rows="5" maxlength="500"></textarea>
+      <br>
+    </div>
+      
+
+      <div class="col2r2">
+        <label>Delivery Instructions</label>
+        <textarea cols="20" rows="5" maxlength="500"></textarea>
+        <br>
+    </div>
+
+      <div class="col2r3">
+        <label>Terms & Conditions(or Attach Document)</label>
+        <textarea cols="20" rows="5" maxlength="500"></textarea>
+        <br>
+    </div>
+
+      </div>
+     
+      
+
+      
+    </div>
+    <hr>
+    
+    
+   
+    
+
+    <input type="submit" value="Draft Requisition" id="draftrequisition">
+    <input type="submit" value="Back">
+    <script src="js\jquery-3.7.0.min.js"></script>
+    <script src="js/task.js"></script>
+
+</body>
+</html>
